@@ -1,0 +1,54 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 25 14:56:03 2020
+
+@author: MANASVI
+"""
+
+#importing the essential libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+
+#importing the data
+data = pd.read_csv(r"Ads_CTR_Optimisation.csv")
+
+#initializing the variables
+N = 10000
+d = 10
+total_reward = 0
+no_of_times_reward_1 = [0]*d
+no_of_times_reward_0 = [0]*d
+ads_selected = []
+
+#Thompson Sampling logic
+for userid in range(N):
+    ad=0
+    max_reward = 0
+    for i in range(d):
+        reward  = random.betavariate(no_of_times_reward_1[i]+1,no_of_times_reward_0[i]+1)
+        if reward>max_reward:
+            max_reward = reward
+            ad = i
+            
+    ads_selected.append(ad)
+    if data.iloc[userid,ad] == 1:
+        no_of_times_reward_1[ad] = no_of_times_reward_1[ad]+1
+    else:
+        no_of_times_reward_0[ad] = no_of_times_reward_0[ad]+1
+    total_reward - total_reward + data.iloc[userid,ad]
+    
+#plotting the result  
+plt.hist(ads_selected)
+plt.xlabel("Ads")
+plt.ylabel("Frequency")
+plt.title("Ad most clicked")
+plt.show()
+    
+    
+        
+
+
+
+
+
