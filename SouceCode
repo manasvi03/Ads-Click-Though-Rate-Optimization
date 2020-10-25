@@ -46,8 +46,10 @@ plt.title("Ad most clicked")
 plt.show()
     
     
-        
-
+"""
+Advantage of TS wrt UCB is that even if you reduce the value of N(total iterations) from 10,000 to as low as 500 we will still get the same result. While with UCB, 
+500 iterations are not enough to predict accurate results. Try it out by yourself with different values of N!
+"""
 
 
 
