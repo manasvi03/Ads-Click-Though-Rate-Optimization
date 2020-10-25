@@ -16,7 +16,7 @@ What is Multi Bandit Problem: https://www.optimizely.com/optimization-glossary/m
 
 What is Reinforcement Learning:https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
 
-What is Upper Confidence Bound(UBC): https://www.geeksforgeeks.org/upper-confidence-bound-algorithm-in-reinforcement-learning/
+What is Upper Confidence Bound(UCB): https://www.geeksforgeeks.org/upper-confidence-bound-algorithm-in-reinforcement-learning/
 
 What is Thompson Sampling(TS): https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf
 
