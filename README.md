@@ -13,7 +13,11 @@ Hence I have solved Ads-CTR-Optimization using Thompson Sampling.
 
 
 What is Multi Bandit Problem: https://www.optimizely.com/optimization-glossary/multi-armed-bandit/ / https://web.stanford.edu/class/cs229t/2017/Lectures/bandits.pdf
+
 What is Reinforcement Learning:https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+
 What is Upper Confidence Bound(UBC): https://www.geeksforgeeks.org/upper-confidence-bound-algorithm-in-reinforcement-learning/
+
 What is Thompson Sampling(TS): https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf
+
 Dataset used: https://www.kaggle.com/akram24/ads-ctr-optimisation
